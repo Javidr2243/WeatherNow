@@ -23,7 +23,7 @@ actor ClimaModel: ObservableObject {
             }
         }
         let task = Task<Clima, Error> {
-            guard let url = URL(string: "https://api.openweathermap.org/data/2.5/weather?lat=\(latitude)&lon=\(longitude)&appid=2ac24745ead1b65e5228e4b4124e47a6&units=metric") else { fatalError("Missing URL") }
+            guard let url = URL(string: "https://api.openweathermap.org/data/2.5/weather?lat=\(latitude)&lon=\(longitude)&apikey&units=metric") else { fatalError("Missing URL") }
             
             
             let urlRequest = URLRequest(url: url)

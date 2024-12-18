@@ -28,14 +28,14 @@ struct CityList: View {
             .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always))
             .accessibilityLabel("Search for a city")
             .accessibilityHint("Enter the city name to filter results")
-            .navigationTitle("Ciudades")
+            .navigationTitle("Cities")
             .accessibilityLabel("City List")
             .accessibilityHint("Navigate through the list of cities")
         } detail: {
             if let city = selectedCity {
                 CityDetails(ciudad: city, climaViewModel: climaViewModel)
             } else {
-                Text("Seleccione una ciudad")
+                Text("Choose a city")
                     .foregroundColor(.secondary)
                     .accessibilityLabel("No city selected")
                     .accessibilityHint("Select a city from the list to view its details")

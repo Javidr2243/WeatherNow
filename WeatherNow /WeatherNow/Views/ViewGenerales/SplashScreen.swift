@@ -28,7 +28,7 @@ struct SplashScreenView: View {
                     Image(systemName: "cloud.sun.fill")
                         .font(.system(size: 80))
                         .foregroundColor(.yellow)
-                    Text("Weather App")
+                    Text("WeatherNow")
                         .font(Font.custom("Baskerville-Bold", size: 26))
                         .foregroundColor(.white.opacity(0.80))
                 }
